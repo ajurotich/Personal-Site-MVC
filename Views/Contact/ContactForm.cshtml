@@ -1,0 +1,114 @@
+﻿@model MVC_Site.Models.ContactFormContents;
+
+@{
+	ViewData["Title"] = "Contact Form";
+}
+
+<!-- Contact Section -->
+<section id="contact" class="contact section glass">
+
+	<!-- Section Title -->
+	<div class="container section-title" data-aos="fade-up">
+		<h2>Contact</h2>
+		<p>The best way to contact me is via email, so feel free to send a message!</p>
+	</div><!-- End Section Title -->
+
+	@if(ViewBag.ContactState is not null) {
+		<div class="container row">
+			<p class="text-danger">
+				@Html.Raw(ViewBag.ContactState)
+			</p>
+		</div>
+	}
+
+	<div class="container" data-aos="fade-up" data-aos-delay="100">
+
+		<div class="row gy-4">
+
+			<div class="col-lg-12">
+				<form asp-action="ContactForm" class="php-email-form">
+					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+					<div class="row mt-3 ">
+					<!-- name -->
+						<div class="form-group col-lg-6">
+							<input asp-for="Name" class="form-control" placeholder="Name" />
+							<span asp-validation-for="Name" class="text-danger"></span>
+						</div>
+
+						<!-- email -->
+						<div class="form-group col-lg-6">
+							<input asp-for="Email" class="form-control" placeholder="Email" />
+							<span asp-validation-for="Email" class="text-danger"></span>
+						</div>
+					</div>
+
+					<!-- subject -->
+					<div class="form-group mt-3">
+						<input asp-for="Subject" class="form-control" placeholder="Subject" />
+						<span asp-validation-for="Subject" class="text-danger"></span>
+					</div>
+
+					<!-- message -->
+					<div class="form-group mt-3">
+						<textarea asp-for="Message" class="form-control" rows="10" placeholder="Message"></textarea>
+						<span asp-validation-for="Message" class="text-danger"></span>
+					</div>
+
+					<!--submite  button -->
+					<div class="form-group mt-4 text-center">
+						<input type="submit" value="Send Message" class="btn btn-primary mt-3" />
+					</div>
+				</form>
+			</div><!-- End Contact Form -->
+
+			
+			@* <div>
+				<form asp-action="ContactForm" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+					<div class="row gy-4 form-group">
+						<div class="col-md-6">
+							<label for="name-field" class="pb-2">Your Name</label>
+							<input asp-for="Name" type="text" name="name" id="name-field" class="form-control">
+							<span asp-validation-for="Name" class="text-danger"></span>
+						</div>
+
+						<div class="col-md-6 form-group">
+							<label for="email-field" class="pb-2">Your Email</label>
+							<input asp-for="Email" type="email" class="form-control" name="email" id="email-field">
+							<span asp-validation-for="Email" class="text-danger"></span>
+						</div>
+
+						<div class="col-md-12 form-group">
+							<label for="subject-field" class="pb-2">Subject</label>
+							<input asp-for="Subject" type="text" class="form-control" name="subject" id="subject-field">
+							<span asp-validation-for="Subject" class="text-danger"></span>
+						</div>
+
+						<div class="col-md-12 form-group">
+							<label for="message-field" class="pb-2">Message</label>
+							<textarea asp-for="Message" class="form-control" name="message" rows="10" id="message-field"></textarea>
+							<span asp-validation-for="Message" class="text-danger"></span>
+						</div>
+
+						<div class="(@ViewBag.ContactStateColor)">@ViewBag.ContactState</div> 
+
+						@if(ViewBag.ContactState is not null) {
+							<div class="row">
+								<p class="text-danger text-center">
+									@Html.Raw(ViewBag.ContactState)
+								</p>
+							</div>
+						}
+						<input type="submit" value="Send Message" class="btn btn-primary mt-3" />
+					
+					</div>
+				</form> 
+			</div> *@
+		
+
+		</div>
+
+	</div>
+
+</section><!-- /Contact Section -->
