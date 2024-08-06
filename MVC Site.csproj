@@ -1,0 +1,228 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-MVC_Site-e1780bcc-85c1-4f90-9cd1-2fc629bda696</UserSecretsId>
+    <RootNamespace>MVC_Site</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\custom.css" />
+    <Content Remove="wwwroot\css\main.css" />
+    <Content Remove="wwwroot\files\Asche Jurotich Resume.pdf" />
+    <Content Remove="wwwroot\images\aurora_bkg.jpg" />
+    <Content Remove="wwwroot\images\dungeon.jpg" />
+    <Content Remove="wwwroot\images\me.jpg" />
+    <Content Remove="wwwroot\images\me_relaxed.jpg" />
+    <Content Remove="wwwroot\images\me_square.jpg" />
+    <Content Remove="wwwroot\images\pic01.jpg" />
+    <Content Remove="wwwroot\images\pic02.jpg" />
+    <Content Remove="wwwroot\images\pic03.jpg" />
+    <Content Remove="wwwroot\images\pic04.jpg" />
+    <Content Remove="wwwroot\images\pic05.jpg" />
+    <Content Remove="wwwroot\images\pic06.jpg" />
+    <Content Remove="wwwroot\images\pic07.jpg" />
+    <Content Remove="wwwroot\images\pic08.jpg" />
+    <Content Remove="wwwroot\images\pic09.jpg" />
+    <Content Remove="wwwroot\images\pic10.jpg" />
+    <Content Remove="wwwroot\images\pic11.jpg" />
+    <Content Remove="wwwroot\images\pic12.jpg" />
+    <Content Remove="wwwroot\images\space_bkg.jpg" />
+    <Content Remove="wwwroot\js\main.js" />
+    <Content Remove="wwwroot\vendor\aos\aos.cjs.js" />
+    <Content Remove="wwwroot\vendor\aos\aos.css" />
+    <Content Remove="wwwroot\vendor\aos\aos.esm.js" />
+    <Content Remove="wwwroot\vendor\aos\aos.js" />
+    <Content Remove="wwwroot\vendor\aos\aos.js.map" />
+    <Content Remove="wwwroot\vendor\bootstrap-icons\bootstrap-icons.css" />
+    <Content Remove="wwwroot\vendor\bootstrap-icons\bootstrap-icons.min.css" />
+    <Content Remove="wwwroot\vendor\bootstrap-icons\bootstrap-icons.scss" />
+    <Content Remove="wwwroot\vendor\bootstrap-icons\fonts\bootstrap-icons.woff" />
+    <Content Remove="wwwroot\vendor\bootstrap-icons\fonts\bootstrap-icons.woff2" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-grid.rtl.css" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-grid.rtl.css.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-grid.rtl.min.css" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-reboot.rtl.css" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-reboot.rtl.css.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-utilities.css" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-utilities.css.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-utilities.min.css" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-utilities.min.css.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-utilities.rtl.css" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-utilities.rtl.css.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap.css" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap.rtl.css" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap.rtl.css.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap.rtl.min.css" />
+    <Content Remove="wwwroot\vendor\bootstrap\css\bootstrap.rtl.min.css.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Remove="wwwroot\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Remove="wwwroot\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\js\bootstrap.esm.js" />
+    <Content Remove="wwwroot\vendor\bootstrap\js\bootstrap.esm.js.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\js\bootstrap.esm.min.js" />
+    <Content Remove="wwwroot\vendor\bootstrap\js\bootstrap.esm.min.js.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\js\bootstrap.js" />
+    <Content Remove="wwwroot\vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Remove="wwwroot\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Remove="wwwroot\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Remove="wwwroot\vendor\glightbox\css\glightbox.css" />
+    <Content Remove="wwwroot\vendor\glightbox\css\glightbox.min.css" />
+    <Content Remove="wwwroot\vendor\glightbox\js\glightbox.js" />
+    <Content Remove="wwwroot\vendor\glightbox\js\glightbox.min.js" />
+    <Content Remove="wwwroot\vendor\php-email-form\validate.js" />
+    <Content Remove="wwwroot\vendor\_imagesloaded\imagesloaded.pkgd.min.js" />
+    <Content Remove="wwwroot\vendor\_isotope-layout\isotope.pkgd.js" />
+    <Content Remove="wwwroot\vendor\_isotope-layout\isotope.pkgd.min.js" />
+    <Content Remove="wwwroot\vendor\_purecounter\purecounter_vanilla.js" />
+    <Content Remove="wwwroot\vendor\_purecounter\purecounter_vanilla.js.map" />
+    <Content Remove="wwwroot\vendor\_swiper\swiper-bundle.min.css" />
+    <Content Remove="wwwroot\vendor\_swiper\swiper-bundle.min.js" />
+    <Content Remove="wwwroot\vendor\_swiper\swiper-bundle.min.js.map" />
+    <Content Remove="wwwroot\vendor\typed.js\typed.cjs" />
+    <Content Remove="wwwroot\vendor\typed.js\typed.cjs.map" />
+    <Content Remove="wwwroot\vendor\typed.js\typed.module.js" />
+    <Content Remove="wwwroot\vendor\typed.js\typed.module.js.map" />
+    <Content Remove="wwwroot\vendor\typed.js\typed.umd.js" />
+    <Content Remove="wwwroot\vendor\typed.js\typed.umd.js.map" />
+    <Content Remove="wwwroot\vendor\_waypoints\noframework.waypoints.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.3" />
+    <PackageReference Include="NETCore.MailKit" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\custom.css" />
+    <None Include="wwwroot\css\main.css" />
+    <None Include="wwwroot\files\Asche Jurotich Resume.pdf" />
+    <None Include="wwwroot\images\aurora_bkg.jpg" />
+    <None Include="wwwroot\images\dungeon.jpg" />
+    <None Include="wwwroot\images\me.jpg" />
+    <None Include="wwwroot\images\me_relaxed.jpg" />
+    <None Include="wwwroot\images\me_square.jpg" />
+    <None Include="wwwroot\images\pic01.jpg" />
+    <None Include="wwwroot\images\pic02.jpg" />
+    <None Include="wwwroot\images\pic03.jpg" />
+    <None Include="wwwroot\images\pic04.jpg" />
+    <None Include="wwwroot\images\pic05.jpg" />
+    <None Include="wwwroot\images\pic06.jpg" />
+    <None Include="wwwroot\images\pic07.jpg" />
+    <None Include="wwwroot\images\pic08.jpg" />
+    <None Include="wwwroot\images\pic09.jpg" />
+    <None Include="wwwroot\images\pic10.jpg" />
+    <None Include="wwwroot\images\pic11.jpg" />
+    <None Include="wwwroot\images\pic12.jpg" />
+    <None Include="wwwroot\images\space_bkg.jpg" />
+    <None Include="wwwroot\js\main.js" />
+    <None Include="wwwroot\vendor\aos\aos.cjs.js" />
+    <None Include="wwwroot\vendor\aos\aos.css" />
+    <None Include="wwwroot\vendor\aos\aos.esm.js" />
+    <None Include="wwwroot\vendor\aos\aos.js" />
+    <None Include="wwwroot\vendor\aos\aos.js.map" />
+    <None Include="wwwroot\vendor\bootstrap-icons\bootstrap-icons.css" />
+    <None Include="wwwroot\vendor\bootstrap-icons\bootstrap-icons.min.css" />
+    <None Include="wwwroot\vendor\bootstrap-icons\bootstrap-icons.scss" />
+    <None Include="wwwroot\vendor\bootstrap-icons\fonts\bootstrap-icons.woff" />
+    <None Include="wwwroot\vendor\bootstrap-icons\fonts\bootstrap-icons.woff2" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-grid.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-grid.rtl.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-grid.rtl.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-grid.rtl.min.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-grid.rtl.min.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-reboot.rtl.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-reboot.rtl.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-utilities.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-utilities.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-utilities.min.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-utilities.min.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-utilities.rtl.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-utilities.rtl.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap.min.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap.rtl.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap.rtl.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap.rtl.min.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap.rtl.min.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.esm.js" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.esm.js.map" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.esm.min.js" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.esm.min.js.map" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.js" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.js.map" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.min.js" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\vendor\glightbox\css\glightbox.css" />
+    <None Include="wwwroot\vendor\glightbox\css\glightbox.min.css" />
+    <None Include="wwwroot\vendor\glightbox\js\glightbox.js" />
+    <None Include="wwwroot\vendor\glightbox\js\glightbox.min.js" />
+    <None Include="wwwroot\vendor\_imagesloaded\imagesloaded.pkgd.min.js" />
+    <None Include="wwwroot\vendor\_isotope-layout\isotope.pkgd.js" />
+    <None Include="wwwroot\vendor\_isotope-layout\isotope.pkgd.min.js" />
+    <None Include="wwwroot\vendor\php-email-form\validate.js" />
+    <None Include="wwwroot\vendor\_purecounter\purecounter_vanilla.js" />
+    <None Include="wwwroot\vendor\_purecounter\purecounter_vanilla.js.map" />
+    <None Include="wwwroot\vendor\_swiper\swiper-bundle.min.css" />
+    <None Include="wwwroot\vendor\_swiper\swiper-bundle.min.js" />
+    <None Include="wwwroot\vendor\_swiper\swiper-bundle.min.js.map" />
+    <None Include="wwwroot\vendor\typed.js\typed.cjs" />
+    <None Include="wwwroot\vendor\typed.js\typed.cjs.map" />
+    <None Include="wwwroot\vendor\typed.js\typed.module.js" />
+    <None Include="wwwroot\vendor\typed.js\typed.module.js.map" />
+    <None Include="wwwroot\vendor\typed.js\typed.umd.js" />
+    <None Include="wwwroot\vendor\typed.js\typed.umd.js.map" />
+    <None Include="wwwroot\vendor\_waypoints\noframework.waypoints.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\vendor\bootstrap-icons\bootstrap-icons.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
